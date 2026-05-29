@@ -24,7 +24,7 @@
         <a href="#sobre" data-i18n="navAbout">cat sobre.json</a>
         <a href="#skills" data-i18n="navSkills">ls skills/</a>
         <a href="#projetos" data-i18n="navProjects">cd projetos</a>
-        <a href="#certificacoes" data-i18n="navCredentials">cat certificados.md</a>
+        <a href="#certificacoes" data-i18n="navCredentials">cat formacao.md</a>
         <a href="#contato" data-i18n="navContact">ssh contato</a>
       </nav>
       <div class="language-switch" aria-label="Selecionar idioma" data-i18n-attr="aria-label:languageAria">
@@ -153,20 +153,16 @@
         </div>
 
         <div class="projects-grid">
-          <article class="project-card featured reveal">
+          <article class="project-card reveal">
             <div class="project-head">
               <span>00</span>
               <strong>neuroai/</strong>
             </div>
+            <span class="project-kind" data-i18n="kindHealthAi">saúde-ai</span>
             <h3 data-i18n="project0Title">NeuroAI: classificador de patologias em MRI cerebral</h3>
             <p data-i18n="project0Text">
               Sistema de Deep Learning com EfficientNetV2B0, Streamlit e Grad-CAM para apoiar análise explicável de imagens de ressonância cerebral.
             </p>
-            <pre><code>xai = {
-  "classes": 44,
-  "model": "EfficientNetV2B0",
-  "explainability": "Grad-CAM"
-}</code></pre>
             <div class="tags">
               <span>TensorFlow</span>
               <span>Computer Vision</span>
@@ -183,16 +179,12 @@
               <span>01</span>
               <strong>ibm-telco-churn/</strong>
             </div>
+            <span class="project-kind" data-i18n="kindMl">machine-learning</span>
             <h3 data-i18n="project1Title">IBM Telco Churn: retenção baseada em risco</h3>
             <p data-i18n="project1Text">
               Modelo de classificação para prever churn, priorizar clientes de
               maior risco e orientar campanhas de retenção.
             </p>
-            <pre><code>metrics = {
-  "roc_auc": 0.84,
-  "pr_auc": 0.63,
-  "recall": 0.84
-}</code></pre>
             <div class="tags">
               <span>Python</span>
               <span>pandas</span>
@@ -208,16 +200,12 @@
               <span>02</span>
               <strong>olist-ecommerce-analytics/</strong>
             </div>
+            <span class="project-kind" data-i18n="kindAnalytics">analytics</span>
             <h3 data-i18n="project2Title">Olist E-commerce Analytics: receita e logística</h3>
             <p data-i18n="project2Text">
               Projeto de analytics engineering para mapear receita, atraso de
               entrega, qualidade de vendedores e oportunidades operacionais.
             </p>
-            <pre><code>kpis = {
-  "revenue": "R$ 15.4M",
-  "top_state": "SP",
-  "late_hotspot": "AL"
-}</code></pre>
             <div class="tags">
               <span>SQL</span>
               <span>DuckDB</span>
@@ -233,16 +221,12 @@
               <span>03</span>
               <strong>nyc-taxi-demand/</strong>
             </div>
+            <span class="project-kind" data-i18n="kindForecast">forecasting</span>
             <h3 data-i18n="project3Title">NYC Taxi Demand Intelligence: previsão de demanda</h3>
             <p data-i18n="project3Text">
               Análise de demanda por zona e hora para apoiar alocação de frota,
               reduzir espera e melhorar planejamento operacional.
             </p>
-            <pre><code>{
-  "mae": 23.15,
-  "rmse": 46.70,
-  "peak_hour": 18
-}</code></pre>
             <div class="tags">
               <span>Forecasting</span>
               <span>Python</span>
@@ -258,15 +242,11 @@
               <span>04</span>
               <strong>hospitalUSA/</strong>
             </div>
+            <span class="project-kind" data-i18n="kindHealthData">saúde-dados</span>
             <h3 data-i18n="project4Title">US RSV Hospitalization Forecasting</h3>
             <p data-i18n="project4Text">
               Análise de internações por RSV nos EUA com limpeza de dados públicos, agregação trimestral, previsão e dashboard em Streamlit.
             </p>
-            <pre><code>pipeline = {
-  "source": "HealthData.gov",
-  "target": "next_quarter_rsv",
-  "dashboard": "Streamlit"
-}</code></pre>
             <div class="tags">
               <span>Healthcare</span>
               <span>Forecasting</span>
@@ -307,14 +287,43 @@
 
       <section class="section credentials-section" id="certificacoes">
         <div class="section-heading reveal">
-          <p class="prompt-line"><span>$</span> cat certificados.md</p>
-          <h2 data-i18n="credentialsTitle">Certificações e sinais de formação contínua.</h2>
+          <p class="prompt-line"><span>$</span> cat formacao.md</p>
+          <h2 data-i18n="credentialsTitle">Formação, pós-graduação e certificações.</h2>
         </div>
 
         <div class="credential-grid">
           <article class="credential-card reveal">
+            <span class="credential-icon">▣</span>
             <div>
-              <span class="file-name">coursera_badge.md</span>
+              <span class="file-name" data-i18n="education1Date">Graduação</span>
+              <h3 data-i18n="education1Title">Engenharia de Bioprocessos e Biotecnologia</h3>
+              <p data-i18n="education1Text">
+                Base em processos biológicos, biotecnologia, análise quantitativa e raciocínio aplicado a problemas de saúde, indústria e pesquisa.
+              </p>
+            </div>
+            <div class="credential-meta">
+              <span data-i18n="education1Meta">Formação em Engenharia</span>
+            </div>
+          </article>
+
+          <article class="credential-card reveal">
+            <span class="credential-icon">⌬</span>
+            <div>
+              <span class="file-name" data-i18n="education2Date">Pós-graduação · 2026-2027</span>
+              <h3 data-i18n="education2Title">IA e Data Science aplicada à saúde</h3>
+              <p data-i18n="education2Text">
+                Pós-graduação no Hospital Sírio-Libanês, conectando ciência de dados, IA, saúde digital e tomada de decisão clínica.
+              </p>
+            </div>
+            <div class="credential-meta">
+              <span data-i18n="education2Meta">Conclusão prevista para 2027</span>
+            </div>
+          </article>
+
+          <article class="credential-card reveal">
+            <span class="credential-icon">&lt;/&gt;</span>
+            <div>
+              <span class="file-name">Coursera / IBM</span>
               <h3 data-i18n="credential1Title">Data Science Orientation</h3>
               <p data-i18n="credential1Text">
                 Certificação Coursera autorizada pela IBM, com fundamentos de Data Science, IA e Machine Learning aplicados a negócios e pesquisa.
@@ -327,6 +336,7 @@
           </article>
 
           <article class="credential-card reveal">
+            <span class="credential-icon">◈</span>
             <div>
               <span class="file-name">health_ai_focus.json</span>
               <h3 data-i18n="credential2Title">Trilha aplicada: IA e Data Science em saúde</h3>

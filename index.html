@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Data Science, Machine Learning, Python e SQL com estética de terminal e código."
+    />
+    <title>Renan | Data Science Terminal Portfolio</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="ai-memory" aria-hidden="true"></canvas>
+    <div class="scanline" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Ir para o início" data-i18n-attr="aria-label:brandAria">
+        <span class="brand-mark">~/rb</span>
+        <span>renan@datascience</span>
+      </a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#sobre" data-i18n="navAbout">cat sobre.json</a>
+        <a href="#skills" data-i18n="navSkills">ls skills/</a>
+        <a href="#projetos" data-i18n="navProjects">cd projetos</a>
+        <a href="#contato" data-i18n="navContact">ssh contato</a>
+      </nav>
+      <div class="language-switch" aria-label="Selecionar idioma" data-i18n-attr="aria-label:languageAria">
+        <button class="lang-button is-active" type="button" data-lang="pt" aria-pressed="true">PT</button>
+        <button class="lang-button" type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy reveal">
+          <p class="prompt-line"><span>portfolio:~/</span> <span data-i18n="heroPrompt">Início</span></p>
+          <p class="terminal-dollar">$</p>
+          <p class="role-line" data-i18n="roleLine">Eu sou</p>
+          <div class="role-rotator" aria-label="Áreas de atuação">
+            <span>Data Scientist</span>
+            <span>Machine Learning Developer</span>
+            <span>Python Developer</span>
+            <span>SQL Developer</span>
+          </div>
+          <h1 class="name-code">
+            <span>&lt;</span>
+            <strong>Renan</strong>
+            <span>/&gt;</span>
+          </h1>
+          <p class="hero-text" data-i18n="heroText">transformando dados em modelos, automações e decisões</p>
+          <div class="command-row" aria-label="Ações principais">
+            <a class="button primary" href="#projetos">./run_projects.sh</a>
+            <a class="button ghost" href="https://github.com/renanbruza-svg" target="_blank" rel="noreferrer">
+              git remote -v
+            </a>
+            <a class="button ghost" href="https://www.linkedin.com/in/renanbruza" target="_blank" rel="noreferrer">
+              open linkedin
+            </a>
+          </div>
+        </div>
+
+        <aside class="terminal-window reveal" aria-label="Skills em formato XML">
+          <div class="terminal-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <strong>skills.xml</strong>
+          </div>
+          <pre><code>&lt;Skills&gt;
+  &lt;DataScience&gt;
+    &lt;Python /&gt;
+    &lt;Pandas /&gt;
+    &lt;NumPy /&gt;
+    &lt;ScikitLearn /&gt;
+  &lt;/DataScience&gt;
+  &lt;MachineLearning&gt;
+    &lt;Regression /&gt;
+    &lt;Classification /&gt;
+    &lt;NLP /&gt;
+  &lt;/MachineLearning&gt;
+  &lt;Database&gt;
+    &lt;SQL /&gt;
+    &lt;PostgreSQL /&gt;
+    &lt;ETL /&gt;
+  &lt;/Database&gt;
+&lt;/Skills&gt;</code></pre>
+        </aside>
+      </section>
+
+      <section class="section split-section" id="sobre">
+        <div class="section-heading reveal">
+          <p class="prompt-line"><span>$</span> cat sobre.json</p>
+          <h2 data-i18n="aboutTitle">Perfil técnico com narrativa de produto e dados.</h2>
+        </div>
+        <div class="json-card reveal">
+          <pre><code data-i18n="aboutJson">{
+  "sobre": {
+    "foco": "resolver problemas com dados",
+    "metodo": [
+      "entender contexto",
+      "explorar dados",
+      "testar hipoteses",
+      "modelar",
+      "comunicar impacto"
+    ],
+    "stack": "Python, SQL, ML, BI"
+  }
+}</code></pre>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading reveal">
+          <p class="prompt-line"><span>$</span> ls -la skills/</p>
+          <h2 data-i18n="skillsTitle">Ferramentas organizadas como módulos de trabalho.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <span class="file-name">python.py</span>
+            <h3 data-i18n="skillPythonTitle">Python para dados</h3>
+            <p data-i18n="skillPythonText">Pandas, NumPy, notebooks, scripts, automações e APIs simples.</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="file-name">machine_learning.ipynb</span>
+            <h3 data-i18n="skillMlTitle">Machine Learning</h3>
+            <p data-i18n="skillMlText">Regressão, classificação, validação, métricas, tuning e explicabilidade.</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="file-name">queries.sql</span>
+            <h3 data-i18n="skillSqlTitle">SQL Analytics</h3>
+            <p data-i18n="skillSqlText">Joins, CTEs, agregações, cohorts, qualidade e modelagem analítica.</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="file-name">dashboard.pbix</span>
+            <h3 data-i18n="skillVizTitle">Visualização</h3>
+            <p data-i18n="skillVizText">KPIs, storytelling, gráficos claros e leitura executiva de resultados.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projetos">
+        <div class="section-heading reveal">
+          <p class="prompt-line"><span>$</span> cd projetos && tree -L 2</p>
+          <h2 data-i18n="projectsTitle">Projetos com cara de repositório técnico.</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-head">
+              <span>01</span>
+              <strong>ibm-telco-churn/</strong>
+            </div>
+            <h3 data-i18n="project1Title">IBM Telco Churn: retenção baseada em risco</h3>
+            <p data-i18n="project1Text">
+              Modelo de classificação para prever churn, priorizar clientes de
+              maior risco e orientar campanhas de retenção.
+            </p>
+            <pre><code>metrics = {
+  "roc_auc": 0.84,
+  "pr_auc": 0.63,
+  "recall": 0.84
+}</code></pre>
+            <div class="tags">
+              <span>Python</span>
+              <span>pandas</span>
+              <span>scikit-learn</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/renanbruza-svg/ibm-telco-churn" target="_blank" rel="noreferrer" data-i18n="repoLabel">Repositório</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-head">
+              <span>02</span>
+              <strong>olist-ecommerce-analytics/</strong>
+            </div>
+            <h3 data-i18n="project2Title">Olist E-commerce Analytics: receita e logística</h3>
+            <p data-i18n="project2Text">
+              Projeto de analytics engineering para mapear receita, atraso de
+              entrega, qualidade de vendedores e oportunidades operacionais.
+            </p>
+            <pre><code>kpis = {
+  "revenue": "R$ 15.4M",
+  "top_state": "SP",
+  "late_hotspot": "AL"
+}</code></pre>
+            <div class="tags">
+              <span>SQL</span>
+              <span>DuckDB</span>
+              <span>Analytics</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/renanbruza-svg/olist-ecommerce-analytics" target="_blank" rel="noreferrer" data-i18n="repoLabel">Repositório</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-head">
+              <span>03</span>
+              <strong>nyc-taxi-demand/</strong>
+            </div>
+            <h3 data-i18n="project3Title">NYC Taxi Demand Intelligence: previsão de demanda</h3>
+            <p data-i18n="project3Text">
+              Análise de demanda por zona e hora para apoiar alocação de frota,
+              reduzir espera e melhorar planejamento operacional.
+            </p>
+            <pre><code>{
+  "mae": 23.15,
+  "rmse": 46.70,
+  "peak_hour": 18
+}</code></pre>
+            <div class="tags">
+              <span>Forecasting</span>
+              <span>Python</span>
+              <span>SQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/renanbruza-svg/nyc-taxi-demand" target="_blank" rel="noreferrer" data-i18n="repoLabel">Repositório</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section workflow-section">
+        <div class="section-heading reveal">
+          <p class="prompt-line"><span>$</span> ./workflow --explain</p>
+          <h2 data-i18n="workflowTitle">Fluxo de trabalho de ponta a ponta.</h2>
+        </div>
+        <ol class="workflow">
+          <li class="reveal">
+            <span>01_collect()</span>
+            <p data-i18n="workflow1">Entendimento do problema, fontes, granularidade e métrica de sucesso.</p>
+          </li>
+          <li class="reveal">
+            <span>02_prepare()</span>
+            <p data-i18n="workflow2">Limpeza, qualidade, features, EDA e documentação reprodutível.</p>
+          </li>
+          <li class="reveal">
+            <span>03_model()</span>
+            <p data-i18n="workflow3">Baselines, validação, comparação de modelos e interpretação.</p>
+          </li>
+          <li class="reveal">
+            <span>04_ship()</span>
+            <p data-i18n="workflow4">Relatório, dashboard, repositório organizado e próximos passos.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="contact reveal" id="contato">
+        <div>
+          <p class="prompt-line"><span>$</span> ssh contato@renan</p>
+          <h2 data-i18n="contactTitle">Vamos conversar sobre dados, modelos e automação.</h2>
+        </div>
+        <div class="command-row">
+          <a class="button primary" href="mailto:renanbruza@gmail.com">send_email()</a>
+          <a class="button ghost" href="https://github.com/renanbruza-svg" target="_blank" rel="noreferrer">
+            github
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span data-i18n="footerName">Renan Data Science Portfolio</span>
+      <span data-i18n="footerDeploy">Deploy estático HTML/CSS/JS: Vercel + GitHub Pages</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Renan data science">
+  <rect width="64" height="64" rx="12" fill="#2f79ad"/>
+  <path d="M18 44V18h14c6 0 10 3.6 10 9 0 3.8-2 6.8-5.4 8.1L45 44h-8.5l-7.2-8H26v8h-8zm8-14h5.7c2.1 0 3.4-1.2 3.4-3s-1.3-3-3.4-3H26v6z" fill="#fff"/>
+  <circle cx="48" cy="16" r="5" fill="#45d6cf"/>
+</svg>

@@ -24,6 +24,7 @@
         <a href="#sobre" data-i18n="navAbout">cat sobre.json</a>
         <a href="#skills" data-i18n="navSkills">ls skills/</a>
         <a href="#projetos" data-i18n="navProjects">cd projetos</a>
+        <a href="#certificacoes" data-i18n="navCredentials">cat certificados.md</a>
         <a href="#contato" data-i18n="navContact">ssh contato</a>
       </nav>
       <div class="language-switch" aria-label="Selecionar idioma" data-i18n-attr="aria-label:languageAria">
@@ -50,6 +51,11 @@
             <span>/&gt;</span>
           </h1>
           <p class="hero-text" data-i18n="heroText">transformando dados em modelos, automações e decisões</p>
+          <div class="status-strip" aria-label="Resumo do portfólio">
+            <span data-i18n="statProjects">5 projetos</span>
+            <span data-i18n="statStacks">Python · SQL · ML · BI</span>
+            <span data-i18n="statFocus">Saúde · Churn · E-commerce · Mobilidade</span>
+          </div>
           <div class="command-row" aria-label="Ações principais">
             <a class="button primary" href="#projetos">./run_projects.sh</a>
             <a class="button ghost" href="https://github.com/renanbruza-svg" target="_blank" rel="noreferrer">
@@ -147,6 +153,31 @@
         </div>
 
         <div class="projects-grid">
+          <article class="project-card featured reveal">
+            <div class="project-head">
+              <span>00</span>
+              <strong>neuroai/</strong>
+            </div>
+            <h3 data-i18n="project0Title">NeuroAI: classificador de patologias em MRI cerebral</h3>
+            <p data-i18n="project0Text">
+              Sistema de Deep Learning com EfficientNetV2B0, Streamlit e Grad-CAM para apoiar análise explicável de imagens de ressonância cerebral.
+            </p>
+            <pre><code>xai = {
+  "classes": 44,
+  "model": "EfficientNetV2B0",
+  "explainability": "Grad-CAM"
+}</code></pre>
+            <div class="tags">
+              <span>TensorFlow</span>
+              <span>Computer Vision</span>
+              <span>XAI</span>
+              <span>Streamlit</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/renanbruza-svg/NEUROAI" target="_blank" rel="noreferrer" data-i18n="repoLabel">Repositório</a>
+            </div>
+          </article>
+
           <article class="project-card reveal">
             <div class="project-head">
               <span>01</span>
@@ -221,6 +252,31 @@
               <a href="https://github.com/renanbruza-svg/03_nyc_taxi_demand" target="_blank" rel="noreferrer" data-i18n="repoLabel">Repositório</a>
             </div>
           </article>
+
+          <article class="project-card reveal">
+            <div class="project-head">
+              <span>04</span>
+              <strong>hospitalUSA/</strong>
+            </div>
+            <h3 data-i18n="project4Title">US RSV Hospitalization Forecasting</h3>
+            <p data-i18n="project4Text">
+              Análise de internações por RSV nos EUA com limpeza de dados públicos, agregação trimestral, previsão e dashboard em Streamlit.
+            </p>
+            <pre><code>pipeline = {
+  "source": "HealthData.gov",
+  "target": "next_quarter_rsv",
+  "dashboard": "Streamlit"
+}</code></pre>
+            <div class="tags">
+              <span>Healthcare</span>
+              <span>Forecasting</span>
+              <span>Plotly</span>
+              <span>Streamlit</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/renanbruza-svg/hospitalUSA" target="_blank" rel="noreferrer" data-i18n="repoLabel">Repositório</a>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -247,6 +303,43 @@
             <p data-i18n="workflow4">Relatório, dashboard, repositório organizado e próximos passos.</p>
           </li>
         </ol>
+      </section>
+
+      <section class="section credentials-section" id="certificacoes">
+        <div class="section-heading reveal">
+          <p class="prompt-line"><span>$</span> cat certificados.md</p>
+          <h2 data-i18n="credentialsTitle">Certificações e sinais de formação contínua.</h2>
+        </div>
+
+        <div class="credential-grid">
+          <article class="credential-card reveal">
+            <div>
+              <span class="file-name">coursera_badge.md</span>
+              <h3 data-i18n="credential1Title">Data Science Orientation</h3>
+              <p data-i18n="credential1Text">
+                Certificação Coursera autorizada pela IBM, com fundamentos de Data Science, IA e Machine Learning aplicados a negócios e pesquisa.
+              </p>
+            </div>
+            <div class="credential-meta">
+              <span data-i18n="credential1Date">Emitido em abr. de 2026 · expira em mai. de 2026</span>
+              <a href="https://www.credly.com/badges/cfb0e981-1c24-4a25-b020-eeb9f7bc708c/linked_in_profile" target="_blank" rel="noreferrer" data-i18n="credentialLink">Exibir credencial</a>
+            </div>
+          </article>
+
+          <article class="credential-card reveal">
+            <div>
+              <span class="file-name">health_ai_focus.json</span>
+              <h3 data-i18n="credential2Title">Trilha aplicada: IA e Data Science em saúde</h3>
+              <p data-i18n="credential2Text">
+                Portfólio com projetos em saúde, previsão operacional, visão computacional médica e comunicação de impacto para decisão.
+              </p>
+            </div>
+            <div class="credential-meta">
+              <span data-i18n="credential2Date">Foco atual de portfólio</span>
+              <a href="#projetos" data-i18n="credential2Link">Ver projetos</a>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="contact reveal" id="contato">

@@ -1,6 +1,6 @@
 # Portfólio Data Science
 
-Portfólio estático para Data Science, Machine Learning, Python e SQL com estética de terminal/código. O projeto destaca três projetos reais de portfólio: churn, analytics de e-commerce e previsão de demanda de táxi.
+Portfólio estático para Data Science, Machine Learning, Python e SQL com estética de terminal/código. O projeto destaca projetos reais de portfólio em saúde, visão computacional médica, churn, analytics de e-commerce, mobilidade e forecasting.
 
 O site tem alternância de idioma PT/EN. O modo PT usa português com acentos e cedilha; o modo EN deixa a leitura pronta para recrutadores internacionais.
 
@@ -12,6 +12,15 @@ O site tem alternância de idioma PT/EN. O modo PT usa português com acentos e 
 - `assets/favicon.svg`: ícone do site.
 - `vercel.json`: configuração simples para Vercel.
 - `.nojekyll`: evita processamento Jekyll no GitHub Pages.
+
+## Conteúdo atual
+
+- `NEUROAI`: classificador de patologias em MRI cerebral com TensorFlow, EfficientNetV2B0, Streamlit e Grad-CAM.
+- `01_ibm_telco_churn`: modelo de churn e priorização de retenção.
+- `02_olist_ecommerce_analytics`: analytics de receita, atraso logístico e qualidade de vendedores.
+- `03_nyc_taxi_demand`: análise e previsão de demanda de táxi em NYC.
+- `hospitalUSA`: forecasting de internações por RSV nos EUA com dashboard Streamlit.
+- Certificação: Data Science Orientation, Coursera/IBM, com link Credly.
 
 ## Como testar localmente
 
